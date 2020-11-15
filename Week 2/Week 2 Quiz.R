@@ -1,10 +1,12 @@
-#### Question 1 ####
-## Caution: Copy and paste the code from below in the console.
-## Running from script doesn't work
 
 library(jsonlite)
 library(httpuv)
 library(httr)
+
+#### Question 1 ####
+
+## Copy and paste the code from below in the console.
+## Running from script doesn't work ...
 
 # Can be github, linkedin etc depending on application
 oauth_endpoints("github")
@@ -42,10 +44,10 @@ gitDF[gitDF$full_name == "jtleek/datasharing", "created_at"]
 library("sqldf")
 
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
-f <- file.path(getwd(), "ss06pid.csv")
+f <- file.path(getwd(), "Week 2/ss06pid.csv")
 download.file(url, f)
 acs <- data.table::data.table(read.csv(f))
-str(df)
+str(acs)
 # Answer: 
 query1 <- sqldf("select pwgtp1 
                 from acs 
@@ -53,7 +55,8 @@ query1 <- sqldf("select pwgtp1
 
 #### Question 3 #### 
 
-sqldf("select distinct AGEP from acs")
+sqldf("select distinct AGEP 
+      from acs;")
 
 
 #### Question 4 ####

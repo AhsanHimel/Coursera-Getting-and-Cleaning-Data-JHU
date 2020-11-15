@@ -14,6 +14,7 @@ df1[VAL == 24, ] %>% count()
 ### Ans. 53 housing units in this survey were worth more than $1,000,000.
 
 # Question 2
+
 ### Ans. Tidy data has one variable per column, whereas FES has: 
 ### gender, marital status and empoloyement status; three variables, which violets
 ### tidy data principle.
