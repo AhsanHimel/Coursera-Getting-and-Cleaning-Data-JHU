@@ -1,4 +1,4 @@
-Author: MD AHSANUL ISLAM
+__Author: MD AHSANUL ISLAM
 
 ## Goal of the Project
 1. A tidy data set 
@@ -13,5 +13,5 @@ Goal | Item | Link to Item
 Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/run_analysis.R "run_analysis.R")
 Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/tidyData.csv "tidyData.csv")
 Github Repo | Repo |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU "Click Here to go to the repository")
-Code book | CodeBook.md |  [Repo Link]( "CodeBook.md")
+Code book | CodeBook.md |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/CodeBook.md "CodeBook.md")
 README | ReadingItNow |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/README.md "README.md")
