@@ -14,4 +14,4 @@ Analysis R Script |  run_analysis.R |  [R Script Link](https://github.com/AhsanH
 Tidy Data Set |  Clean Data Set |  [Data Set Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/tidyData.csv "tidyData.csv")
 Github Repo | Repo |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU "Click Here to go to the repository")
 Code book | CodeBook.md |  [Repo Link]( "CodeBook.md")
-README | ReadingItNow |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/Project/README.md "README.md")
+README | ReadingItNow |  [Repo Link](https://github.com/AhsanHimel/Coursera-Getting-and-Cleaning-Data-JHU/blob/main/Project/README.md "README.md")
