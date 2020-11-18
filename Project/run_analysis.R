@@ -27,9 +27,9 @@ setnames(train,
          old = colnames(train), 
          new = measurements)
 trainActivities <- fread("Project/UCI HAR Dataset/train/Y_train.txt", 
-                         col.names = c("Activity"))
+                         col.names = "Activity")
 trainSubjects <- fread("Project/UCI HAR Dataset/train/subject_train.txt", 
-                       col.names = c("SubjectNum"))
+                       col.names = "SubjectNum")
 train <- cbind(trainSubjects, trainActivities, train)
 
 # Load test data-sets
@@ -45,3 +45,14 @@ test <- cbind(testSubjects, testActivities, test)
 
 # merge data-sets and add labels
 combined <- rbind(train, test)
+
+# Convert classLabels to activityName 
+combined$Activity <- factor(combined$Activity,
+                            levels = activityLabels$classLabels,
+                            labels = activityLabels$activityName)
+combined$SubjectNum <- as.factor(combined$SubjectNum)
+combined <- reshape2::melt(data = combined, id = c("SubjectNum", "Activity"))
+combined <- reshape2::dcast(data = combined, 
+                            SubjectNum + Activity ~ variable, fun.aggregate = mean)
+
+data.table::fwrite(x = combined, file = "Project/tidyData.csv", quote = FALSE)
